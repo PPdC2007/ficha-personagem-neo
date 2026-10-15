@@ -1,0 +1,151 @@
+body {
+    background-image: url(imagens/fundo_tech.jpeg);
+    background-position: center;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+section {
+    display: flex;
+    justify-content: center;
+    margin: 1px;
+}
+.subtitulo{
+    background-image: url(imagens/fundinho_h2.png);
+    background-position: center;
+    background-size: cover;
+    padding: 35px;
+    font-size: 50px;
+}
+.botao {
+    filter: brightness(100%);
+}
+.botao:hover {
+    filter: brightness(150%);
+}
+
+/*
+    Menu
+*/
+.menu {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #006eef;
+    padding: 5px 5px;
+}
+.menu a{
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+    padding: 7px 5px;
+    border: 1px solid white;
+    font-weight: 100;
+}
+.menu a:hover {
+    color: black;
+    background-color: aqua;
+}
+#icon{
+    border: none;
+    padding: 0px 0px;
+    margin: 0px;
+}
+#icon:hover{
+    background-color: transparent;
+}
+
+/*
+    Section - Inicio
+*/
+.Inicio h2{
+    font-size: 30px;
+    text-decoration:underline;
+}
+.Inicio article{
+    padding: 10px 80px;
+}
+#p1{
+    font-size: small;
+    color: black;
+}
+#identidade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+    width: 420px;
+
+    background-image: url(imagens/fundinho_identidade.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/*
+    Section - Quem é Neo
+*/
+#Quem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#Quem article {
+    background-image: url(imagens/fundinho_objetos_quem.png);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+#Quem a{
+    align-self:flex-end;
+}
+.ordem{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 15px;
+}
+
+#Backstory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Backstory div{
+    display: flex;
+    flex-direction: row;
+}
+#Backstory article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align:justify;
+    aspect-ratio: 1 / 1;
+    width: 350px;
+    margin-left: 70px;
+    margin-right: 70px;
+
+    background-image: url(imagens/fundinho_objetos_backstory.png);
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+}
+#Backstory a{
+    align-self:flex-end;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
