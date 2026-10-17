@@ -17,6 +17,17 @@ section {
     padding: 35px;
     font-size: 50px;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+.ordem{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 15px;
+}
 .botao {
     filter: brightness(100%);
 }
@@ -56,13 +67,13 @@ section {
 }
 
 /*
-    Section - Inicio
+    Section - Inicio_index
 */
-.Inicio h2{
+.Inicio_index h2{
     font-size: 30px;
     text-decoration:underline;
 }
-.Inicio article{
+.Inicio_index article{
     padding: 10px 80px;
 }
 #p1{
@@ -107,13 +118,10 @@ section {
 #Quem a{
     align-self:flex-end;
 }
-.ordem{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    font-size: 15px;
-}
 
+/*
+    Section - Backstory
+*/
 #Backstory{
     display: flex;
     flex-direction: column;
@@ -144,8 +152,21 @@ section {
     align-self:flex-end;
 }
 
-footer{
+/*
+    Inicio_rpg
+*/
+.Inicio_rpg {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    text-align: justify;
+    align-items: center;
 }
+#identidade_rg {
+    aspect-ratio: initial;
+    width: 600px;
+}
+#identidade_foto {
+    aspect-ratio: initial;
+    width: 250px;
+}
+
