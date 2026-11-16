@@ -12,18 +12,41 @@
 </head>
 <body>
     <header>
-        <menu class="menu" id="Inicio_rpg">
-            <a href="index.html" id="icon" class="botao"><img src="css/imagens/Star.png" alt="" width="50px"></a>
-            <a href="#Atributos">Atributos</a>
-            <a href="#Equipamentos">Equipamentos</a>
-            <a href="#Etereocinese">Etereocinese</a>
-            <a href="#Contato">Contato</a>
-        </menu>
+        <button id="botao" class="botao"><img src="css/imagens/Star.png" alt="" width="50px"></button>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#Inicio_rpg">Inicio</a></li>
+                <li><a href="#Atributos">Atributos</a></li>
+                <li><a href="#Equipamentos">Equipamentos</a></li>
+                <li><a href="#Etereocinese">Etereocinese</a></li>
+                <li><a href="index.html">Voltar</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="Inicio_rpg">
-            <img src="css/imagens/identidade.png" alt="rg do personagem kkk" id="identidade_rg">
+        <section class="Inicio_rpg" id="Inicio_rpg">
+            <div>
+                <p id="identidade">
+                    Nome: Neo Aishyne Sálleh <br>
+                    Race: Sallenita <br>
+                    Age: 38 real/19 aparente <br>
+                    Gender: Masculino <br>
+                    Group: Autoridade Intergaláctica <br>
+                    Job: Policial e Galaxzoólogo <br>
+                </p>
+                <form id="exp">
+                    <label for="">Nivel: </label> 
+                    <label for="" id="level"></label>
+                    <br>
+                    <label for="">XP:</label>
+                    <label for="" id="numeroXp"></label>
+                    <br>
+                    <input type="submit" value="Aumento de XP">
+                </form>
+            </div>
+            
             <img src="css/imagens/identidade_neo.png" alt="imagem do personagem" id="identidade_foto">
         </section>
 
@@ -36,9 +59,6 @@
                 <img src="css/imagens/atributos/atributos_2.png" alt="atributos de relacionamento">
                 <img src="css/imagens/atributos/atributo_1.png" alt="atributos de personalidade e comportamento">
             </div>
-            <div id="link">
-                <a href="#Inicio_rpg"><img src="css/imagens/Star.png" alt="botao de ancora" width="50px" class="botao"></a>
-            </div>
         </section>
 
         <hr>
@@ -46,40 +66,65 @@
         <section id="Equipamentos">
             <h2 class="subtitulo">Equipamentos</h2>
             <article>
-                <table>
+                <table id="table">
                     <thead>
                         <tr>
                             <th>Equipamento</th>
                             <th>Elemento Sinérgico</th>
+                            <th>Raridade</th>
                             <th>Habilidade</th>
                             <th>Limite</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tbody">
                         <tr>
-                            <td>Asa Fênix</td>
-                            <td>Fogo</td>
-                            <td>Burning Slash. Rajada de fogo em forma de corte.
-                                <br>Causa 25 de dano.</td>
-                            <td>Custa 10pts de éter</td>
-                        </tr>
-                        <tr>
-                            <td>Maleta do Alvo Protetor</td>
-                            <td>Yin, Yang, Terra</td>
-                            <td>Capacidade de armazenar seres vivos e gerar automaticamente um habitat natural.</td>
-                            <td>Nenhum custo por criatura.
-                                <br>Não gera alimentos.</td>
+                            <td></td>
                         </tr>
                     </tbody>
+                </table>
+            </article>
+            <article>
+                <table id="table_azul">
+                    <form id="adicionar_equi">
+                        <thead>
+                            <tr>
+                                <th>Adicionar Equipamento</th>
+                            </tr>
+                            <tr>
+                                <th>Equipamento</th>
+                                <th>Raridade</th>
+                                <th>Elemento Sinérgico</th>
+                                <th>Habilidade</th>
+                                <th>Limite</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" size="35px" id="equipamento" placeholder="insira equipamento" required></td>
+                                <td><input type="text" size="35px" id="raridade" placeholder="insira raridade" required></td>
+                                <td><input type="text" size="35px" id="elemento" placeholder="insira elemento" required></td>
+                                <td><input type="text" size="35px" id="habilidade" placeholder="insira habilidade" required></td>
+                                <td><input type="text" size="35px" id="limite" placeholder="insira limite" required></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="submit" value="Adicionar">
+                                </td>
+                                <td>
+                                    <input type="button" value="Deletar" id="deletar">
+                                </td>
+                                <td>
+                                    <select name="selecionarDelecao" id="selecao"></select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </form>
                 </table>
             </article>
             <article class="ordem">
                 <img src="css/imagens/item_espada.png" alt="equipamento da espada" width="400px">
                 <img src="css/imagens/item_maleta.png" alt="equipamento da maleta" width="250px">
             </article>
-            <div id="link">
-                <a href="#Inicio_rpg"><img src="css/imagens/Star.png" alt="botao de ancora" width="50px" class="botao"></a>
-            </div>
         </section>
 
         <hr>
@@ -87,7 +132,7 @@
         <section id="Etereocinese">
             <div class="ordem">
                 <article>
-                    <h2>Etereocinese</h>
+                    <h2>Artes Etéreas</h>
                     <h3>Conhecimento Mágico - Kaster</h3>
                     <p>
                         Todo seu conhecimento do Kaster foi baseado em grimórios. Conhece magias fixas e prontas para a maioria das situações cotidianas.
@@ -111,10 +156,6 @@
 
             <br>
             <a href="canva.html" id="sistema_de_poder">Sistema de Poder</a>
-            
-            <div id="link">
-                <a href="#Inicio_rpg"><img src="css/imagens/Star.png" alt="botao de ancora" width="50px" class="botao"></a>
-            </div>
         </section>
     </main>
     <hr>
@@ -125,5 +166,6 @@
             <br>Email: pedropontesdacunha@gmail.com
         </p>
     </footer>
+    <script src="JS/script.js"></script>
 </body>
 </html>

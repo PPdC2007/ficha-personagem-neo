@@ -29,22 +29,37 @@ footer{
     flex-direction: row;
     font-size: 15px;
 }
-.botao {
+button {
+    all: unset;
+    display: var(--nav-button-display, flex);
+    border: none;
+    padding: 0px 0px;
+    margin: 0px;
+    background-color: transparent;
     filter: brightness(100%);
+    position: fixed;
+    z-index: 1;
 }
-.botao:hover {
+button:hover {
     filter: brightness(150%);
+}
+ul {
+    list-style: none;
+}
+ul li {
+    margin: 20px;
 }
 
 /*
     Menu
 */
 .menu {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    display: none;
+    align-items:flex-start;
     background-color: #006eef;
-    padding: 5px 5px;
+    height: var(--nav-button-display, 100%);
+
+    position:fixed;
 }
 .menu a{
     color: white;
@@ -58,15 +73,6 @@ footer{
     color: black;
     background-color: aqua;
 }
-#icon{
-    border: none;
-    padding: 0px 0px;
-    margin: 0px;
-}
-#icon:hover{
-    background-color: transparent;
-}
-
 /*
     Section - Inicio_index
 */
@@ -162,6 +168,15 @@ footer{
     justify-content: center;
     align-items: center;
 }
+#Inicio_rpg p {
+    display: flex;
+    padding: 60px 40px;
+    background-image: url(imagens/identidade.png);
+    aspect-ratio: 3/1;
+    width: 600px;
+    font-size: 20px;
+    color: greenyellow;
+}
 #identidade_rg {
     aspect-ratio: initial;
     width: 900px;
@@ -211,19 +226,37 @@ footer{
     display: flex;
     justify-content: center;
 }
-#Equipamentos table{
+#table{
     table-layout: fixed;
     width: 90%;
-    height: 200px;
+    height: 60px;
     border: red 2px solid;
 }
-#Equipamentos thead {
+#table thead {
     background-color: #ffcdcd;
     color: black;
 }
-#Equipamentos td, th {
-    padding: 5px;
-    border: red 1px double;
+#table td, th {
+    padding: 1px;
+    border: blue 1px double;
+}
+#table_azul{
+    table-layout: fixed;
+    width: 90%;
+    border: blue 2px solid;
+}
+#table_azul thead {
+    background-color: #00ffff;
+    color: black;
+}
+#table_azul td, th {
+    text-align: center;
+    padding: 1px;
+    border: blue 1px double;
+}
+#adicionar_equi{
+    font-size: 20px;
+    padding: 1px 20px;
 }
 #Equipamentos img {
     margin: 25px;
